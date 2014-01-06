@@ -15,5 +15,5 @@ int main(int argc, char** argv)
 	}
 
 	// Check if the callback feels that the test runner should fail
-	return callback->Success() ? -1 : 0;
+	return callback->Success() ? 0 : -1;
 }

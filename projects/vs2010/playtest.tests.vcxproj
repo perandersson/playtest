@@ -72,6 +72,9 @@
       <AdditionalLibraryDirectories>$(SolutionDir)../../bin/</AdditionalLibraryDirectories>
       <AdditionalDependencies>playtest_d.lib;playtest.runner_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>"$(SolutionDir)../../bin/playtest.tests.exe"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -92,6 +95,9 @@
       <AdditionalLibraryDirectories>$(SolutionDir)../../bin/</AdditionalLibraryDirectories>
       <AdditionalDependencies>playtest.lib;playtest.runner.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>"$(SolutionDir)../../bin/playtest.tests.exe"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
