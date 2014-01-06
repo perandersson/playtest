@@ -31,8 +31,8 @@
 
 #define ASSERT_TRUE(Condition) ASSERT_EXPRESSION(Condition == false, "Value is false")
 #define ASSERT_FALSE(Condition) ASSERT_EXPRESSION(Condition == true, "Value is true")
-#define ASSERT_EQUALS(Value, Expected) ASSERT_EXPRESSION(Value != Expected, "Value are not equal")
-#define ASSERT_NOT_EQUALS(Value, Expected) ASSERT_EXPRESSION(Value == Expected, "Value are equal")
+#define ASSERT_EQUALS(Value, Expected) ASSERT_EXPRESSION(!(Value == Expected), "Value are not equal")
+#define ASSERT_NOT_EQUALS(Value, Expected) ASSERT_EXPRESSION(!(Value != Expected), "Value are equal")
 #define ASSERT_NOT_NULL(Value) ASSERT_EXPRESSION(Value == NULL, "Value is null")
 #define ASSERT_NULL(Value) ASSERT_EXPRESSION(Value != NULL, "Value is not null")
 #define ASSERT_FAIL(Message) ASSERT_EXPRESSION(true, Message)

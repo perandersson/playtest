@@ -11,6 +11,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\playtest.tests\test_boolean.cpp" />
+    <ClCompile Include="..\..\playtest.tests\test_failure.cpp" />
+    <ClCompile Include="..\..\playtest.tests\test_objects.cpp" />
+    <ClCompile Include="..\..\playtest.tests\test_outside_suite.cpp" />
+    <ClCompile Include="..\..\playtest.tests\test_pointers.cpp" />
+    <ClCompile Include="..\..\playtest.tests\test_string.cpp" />
     <ClCompile Include="..\..\playtest.tests\test_suite.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
