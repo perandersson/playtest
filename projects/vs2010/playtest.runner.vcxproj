@@ -11,9 +11,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\playtest.runner\playtest\runner\runner.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\playtest.runner\playtest\runner\runner.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

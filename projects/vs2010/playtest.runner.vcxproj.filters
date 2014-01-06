@@ -21,11 +21,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\playtest.runner\playtest\runner\runner.h">
-      <Filter>Source Files\playtest\runner</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\playtest.runner\playtest\runner\runner.cpp">
       <Filter>Source Files\playtest\runner</Filter>
     </ClCompile>
